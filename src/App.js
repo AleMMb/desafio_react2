@@ -8,7 +8,7 @@ import Detalles from './views/Detalles'
 
 function App() {
   return (
-    <div>
+    <div className='flex flex-col'>
       <BrowserRouter>
         <Navbar />
         <Routes>

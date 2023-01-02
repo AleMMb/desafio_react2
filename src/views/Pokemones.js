@@ -24,15 +24,17 @@ function Pokemones() {
     }, []);
 
     return (
-        <div>
-            <h1>Seleccione un Pokemon</h1>
-            <select name="pokemon"
+        <div className="bg-[#fbcd3c] h-[32rem] text-center">
+            <p className="m-8 text-black text-2xl">Seleccione un Pokemón</p>
+            <select className="select w-full max-w-xs" name="pokemon"
                 onChange={({ target }) => setSeleccionado(target.value)}>
                 <option>Pokemones</option>
                 {pokelista.map((e, i) => (
                     <option key={i} value={e.name}>{e.name}</option>))}
             </select>
-            <button onClick={irVistaDetalles}>Ver detalles</button>
+            <div>
+                <button className="btn m-8"onClick={irVistaDetalles}>Ver detalles</button>
+            </div>
         </div>
     )
 } export default Pokemones

@@ -28,13 +28,22 @@ function Detalles() {
 
 
     return (
-        <div>
-            <h1>{nombre}</h1>
-            <img src={infoPokemon.imagenPoke} />
-            {infoPokemon.stats?.map((stat, i) => (
-                <li key={i}>
-                    {stat.name}: {stat.base}
-                </li>))}
+        <div className="bg-[#fbcd3c] h-[32rem] text-center p-[8rem]">
+            <div className="card bg-base-100 shadow-xl flex flex-row justify-center">
+                <figure className="">
+                    <img
+                        className="w-[300px] h-[300px] p-8"
+                        src={infoPokemon.imagenPoke}
+                        alt={nombre} />             
+                </figure>
+                <div className="card-body">
+                <h2 className="card-title justify-center text-[#F6CF57] text-2xl">{nombre}</h2>
+                    {infoPokemon.stats?.map((stat, i) => (
+                        <li key={i}>
+                            {stat.name}: {stat.base}
+                        </li>))}
+                </div>
+            </div>
         </div>
     )
 } export default Detalles
