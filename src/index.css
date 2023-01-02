@@ -11,3 +11,29 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+.home-wiew{
+  width: 100%;
+  height: 615px;
+  background-image: url("/public/background.jpg");
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  justify-content: center;
+}
+
+
+.nav_bar{
+  display: flex;
+  align-items: baseline;
+  justify-content: space-around;
+}
+
+.active{
+  color: crimson;
+  font-weight: bolder;
+}
+
+.menu_nav_noActivo{
+  color: darkorange;
+}
